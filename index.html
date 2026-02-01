@@ -3,13 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coyoles Cafe</title>
+    <title>Coyoles Café | El mejor grano</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        body { font-family: 'Lato', sans-serif; }
+    </style>
 </head>
-<body class="bg-stone-900 text-stone-100 flex items-center justify-center h-screen">
-    <div class="text-center">
-        <h1 class="text-6xl font-bold mb-4">Coyoles Café</h1>
-        <p class="text-xl text-stone-400">Próximamente...</p>
-    </div>
+<body class="bg-stone-950 text-stone-200">
+
+    <nav class="fixed w-full z-20 top-0 start-0 bg-stone-950/80 backdrop-blur-md border-b border-stone-800">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-amber-500">Coyoles Café</span>
+            <div class="hidden w-full md:block md:w-auto">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0">
+                    <li><a href="#" class="block py-2 px-3 text-white bg-amber-600 rounded md:bg-transparent md:text-amber-500 md:p-0">Inicio</a></li>
+                    <li><a href="#menu" class="block py-2 px-3 text-stone-300 hover:text-white md:p-0">Menú</a></li>
+                    <li><a href="#ubicacion" class="block py-2 px-3 text-stone-300 hover:text-white md:p-0">Ubicación</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=2071')] bg-cover bg-center bg-no-repeat bg-fixed">
+        <div class="absolute inset-0 bg-black/60"></div> <div class="relative z-10 text-center px-4">
+            <h1 class="mb-4 text-5xl md:text-7xl font-extrabold tracking-tight leading-none text-white">
+                Despierta tus sentidos
+            </h1>
+            <p class="mb-8 text-lg font-normal text-stone-300 lg:text-xl sm:px-16 lg:px-48">
+                El mejor café de especialidad, preparado con pasión en cada taza.
+            </p>
+            <a href="#menu" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-stone-900 rounded-lg bg-amber-500 hover:bg-amber-600 focus:ring-4 focus:ring-amber-300 transition duration-300">
+                Ver Menú
+            </a>
+        </div>
+    </section>
+
+    <section id="menu" class="py-20 px-4 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12 text-amber-500">Nuestros Favoritos</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <div class="bg-stone-900 border border-stone-800 rounded-lg shadow overflow-hidden hover:scale-105 transition duration-300">
+                <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?q=80&w=800" alt="Latte">
+                <div class="p-5">
+                    <h3 class="mb-2 text-2xl font-bold tracking-tight text-white">Latte Arte</h3>
+                    <p class="mb-3 font-normal text-stone-400">Espresso intenso con leche texturizada y arte latte.</p>
+                    <span class="text-xl font-bold text-amber-500">$55.00</span>
+                </div>
+            </div>
+
+            <div class="bg-stone-900 border border-stone-800 rounded-lg shadow overflow-hidden hover:scale-105 transition duration-300">
+                <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800" alt="Cold Brew">
+                <div class="p-5">
+                    <h3 class="mb-2 text-2xl font-bold tracking-tight text-white">Cold Brew</h3>
+                    <p class="mb-3 font-normal text-stone-400">Macerado en frío por 18 horas. Notas a chocolate.</p>
+                    <span class="text-xl font-bold text-amber-500">$60.00</span>
+                </div>
+            </div>
+
+            <div class="bg-stone-900 border border-stone-800 rounded-lg shadow overflow-hidden hover:scale-105 transition duration-300">
+                <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1626083070402-9988229df55a?q=80&w=800" alt="Postre">
+                <div class="p-5">
+                    <h3 class="mb-2 text-2xl font-bold tracking-tight text-white">Cheesecake</h3>
+                    <p class="mb-3 font-normal text-stone-400">Estilo New York con frutos rojos de temporada.</p>
+                    <span class="text-xl font-bold text-amber-500">$85.00</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="ubicacion" class="bg-stone-900 rounded-lg shadow m-4">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-amber-500">Coyoles Café</span>
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-stone-400 sm:mb-0">
+                    <li><a href="#" class="hover:underline me-4 md:me-6">Instagram</a></li>
+                    <li><a href="#" class="hover:underline">Facebook</a></li>
+                </ul>
+            </div>
+            <hr class="my-6 border-stone-700 sm:mx-auto lg:my-8" />
+            <span class="block text-sm text-stone-500 sm:text-center">© 2026 Coyoles Café. Hecho por Marco.</span>
+        </div>
+    </footer>
+
 </body>
 </html>

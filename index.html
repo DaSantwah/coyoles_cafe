@@ -1,268 +1,118 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coyoles Café | Sabor de Hogar</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* Configuración de colores basados en TU LOGO */
-        :root {
-            --color-rose-coyoles: #d94f30; /* El color de la rosa */
-            --color-green-coyoles: #1f7a3c; /* El color de la taza */
-            --color-cream-bg: #fafaf5;      /* Fondo cremita hogareño */
-        }
-        /* Aplicando las fuentes */
-        h1, h2, h3, h4, .font-serif { font-family: 'Lora', serif; }
-        body { font-family: 'Lato', sans-serif; background-color: var(--color-cream-bg); color: #44403c; }
+<section id="menu" class="py-24 px-4 max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+        <span class="text-green-coyoles font-bold uppercase tracking-widest">Nuestra Cocina</span>
+        <h2 class="text-4xl md:text-5xl font-bold text-stone-800 mt-2 mb-6 font-serif">Menú Casero</h2>
+        <p class="text-stone-600 max-w-2xl mx-auto text-lg">Recetas sencillas, ingredientes frescos y el toque secreto casero.</p>
+    </div>
 
-        /* Clases personalizadas para usar tus colores */
-        .text-rose-coyoles { color: var(--color-rose-coyoles); }
-        .bg-rose-coyoles { background-color: var(--color-rose-coyoles); }
-        .text-green-coyoles { color: var(--color-green-coyoles); }
-        .bg-green-coyoles { background-color: var(--color-green-coyoles); }
-        .border-green-coyoles { border-color: var(--color-green-coyoles); }
-        .border-rose-coyoles { border-color: var(--color-rose-coyoles); }
-    </style>
-</head>
-<body class="antialiased">
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+        
+        <div class="bg-white p-8 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-stone-100 relative overflow-hidden">
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-green-coyoles/10 rounded-full blur-2xl"></div>
 
-    <nav class="fixed w-full z-20 top-0 start-0 bg-[#fafaf5]/95 backdrop-blur-md border-b border-stone-200 shadow-sm">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="#" class="flex items-center space-x-2">
-                <span class="self-center text-3xl font-bold font-serif text-green-coyoles tracking-wide">COYOLES</span>
-            </a>
-            <div class="hidden w-full md:block md:w-auto">
-                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 text-stone-700">
-                    <li><a href="#inicio" class="block py-2 px-3 text-green-coyoles font-bold">Inicio</a></li>
-                    <li><a href="#menu" class="block py-2 px-3 hover:text-rose-coyoles transition">Menú</a></li>
-                    <li><a href="#ubicacion" class="block py-2 px-3 hover:text-rose-coyoles transition">Ubicación</a></li>
-                </ul>
+            <h3 class="text-3xl font-bold text-green-coyoles mb-6 flex items-center font-serif">☕ Barra de Café</h3>
+            <div class="space-y-6 mb-10">
+                <div class="flex justify-between items-baseline border-b border-stone-200 pb-2 border-dashed">
+                    <div class="pr-4">
+                        <h4 class="text-xl font-bold text-stone-800">Café Refill</h4>
+                        <p class="text-stone-600 text-sm italic">Refill de jarra.</p>
+                    </div>
+                    <span class="text-xl font-bold text-rose-coyoles whitespace-nowrap">$25</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-stone-200 pb-2 border-dashed">
+                    <div class="pr-4">
+                        <h4 class="text-xl font-bold text-stone-800">Espresso</h4>
+                        <p class="text-stone-600 text-sm italic">Aromático y lleno de sabor.</p>
+                    </div>
+                    <span class="text-xl font-bold text-rose-coyoles whitespace-nowrap">$35</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-stone-200 pb-2 border-dashed">
+                    <div class="pr-4">
+                        <h4 class="text-xl font-bold text-stone-800">Ristretto</h4>
+                        <p class="text-stone-600 text-sm italic">Extracción intensa y dulce.</p>
+                    </div>
+                    <span class="text-xl font-bold text-rose-coyoles whitespace-nowrap">$20</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-stone-200 pb-2 border-dashed">
+                    <div class="pr-4">
+                        <h4 class="text-xl font-bold text-stone-800">Cortado</h4>
+                        <p class="text-stone-600 text-sm italic">Cremoso e intenso.</p>
+                    </div>
+                    <span class="text-xl font-bold text-rose-coyoles whitespace-nowrap">$25</span>
+                </div>
+            </div>
+
+            <h3 class="text-3xl font-bold text-green-coyoles mb-6 flex items-center font-serif">☁️ Capuchinos</h3>
+            <div class="space-y-6 mb-10">
+                <div class="flex justify-between items-baseline border-b border-stone-200 pb-2 border-dashed">
+                    <div class="pr-4">
+                        <h4 class="text-xl font-bold text-stone-800">Italiano 10 Oz</h4>
+                        <p class="text-stone-600 text-sm italic">Equilibrio perfecto de espuma.</p>
+                    </div>
+                    <span class="text-xl font-bold text-rose-coyoles whitespace-nowrap">$38</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-stone-200 pb-2 border-dashed">
+                    <div class="pr-4">
+                        <h4 class="text-xl font-bold text-stone-800">Moka 10 Oz</h4>
+                        <p class="text-stone-600 text-sm italic">Chocolatoso y espumoso.</p>
+                    </div>
+                    <span class="text-xl font-bold text-rose-coyoles whitespace-nowrap">$60</span>
+                </div>
+            </div>
+
+            <h3 class="text-3xl font-bold text-green-coyoles mb-6 flex items-center font-serif">🌙 Moon Milks</h3>
+            <div class="space-y-6">
+                <div class="flex justify-between items-baseline border-b border-stone-200 pb-2 border-dashed">
+                    <div class="pr-4">
+                        <h4 class="text-xl font-bold text-stone-800">Chai</h4>
+                        <p class="text-stone-600 text-sm italic">Cremado con un toque de canela.</p>
+                    </div>
+                    <span class="text-xl font-bold text-rose-coyoles whitespace-nowrap">$48</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-stone-200 pb-2 border-dashed">
+                    <div class="pr-4">
+                        <h4 class="text-xl font-bold text-stone-800">Matcha</h4>
+                        <p class="text-stone-600 text-sm italic">Relajante y pastoso.</p>
+                    </div>
+                    <span class="text-xl font-bold text-rose-coyoles whitespace-nowrap">$40</span>
+                </div>
             </div>
         </div>
-    </nav>
 
-    <section id="inicio" class="relative h-[90vh] flex items-center justify-center bg-[url('img/cafeypastel.jpeg')] bg-cover bg-center bg-no-repeat bg-fixed mt-16">
-        <div class="absolute inset-0 bg-stone-900/20"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-[#fafaf5] via-transparent to-transparent"></div>
+        <div class="bg-white p-8 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-stone-100 relative overflow-hidden">
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-rose-coyoles/10 rounded-full blur-2xl"></div>
 
-        <div class="relative z-10 text-center px-4 max-w-3xl bg-[#fafaf5]/80 p-10 rounded-2xl shadow-xl backdrop-blur-sm border-t-4 border-green-coyoles">
-            <h1 class="mb-4 text-5xl md:text-6xl font-bold tracking-tight leading-tight text-rose-coyoles font-serif">
-                Visita nuestra cafetería!
-            </h1>
-            <p class="mb-8 text-xl font-normal text-stone-700 sm:px-16">
-                Donde el café se prepara con el corazón y cada taza se siente como un cálido abrazo.
-            </p>
-            <a href="#menu" class="inline-flex justify-center items-center py-3 px-8 text-lg font-bold text-white rounded-full bg-green-coyoles hover:bg-[#165e2d] transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                Ver nuestro menú
-            </a>
-        </div>
-    </section>
-
-    <section id="menu" class="py-24 px-4 max-w-6xl mx-auto">
-        <div class="text-center mb-16">
-            <span class="text-green-coyoles font-bold uppercase tracking-widest ls-2">Nuestra Cocina</span>
-            <h2 class="text-4xl md:text-5xl font-bold text-stone-800 mt-2 mb-6 font-serif">Menú Casero</h2>
-            <p class="text-stone-600 max-w-2xl mx-auto text-lg">Recetas sencillas, ingredientes frescos y el toque secreto casero.</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-10">
-
-            <div class="bg-white p-8 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-stone-100 relative overflow-hidden">
-                <div class="absolute -top-10 -right-10 w-32 h-32 bg-green-coyoles/10 rounded-full blur-2xl"></div>
-
-                <h3 class="text-3xl font-bold text-green-coyoles mb-8 flex items-center font-serif">
-                    <span class="mr-3 text-4xl"></span> Barra de Café
-                </h3>
-                <div class="space-y-8">
-                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
-                        <div>
-                            <h4 class="text-xl font-bold text-stone-800">Café Refill</h4>
-                            <p class="text-stone-600 mt-1 italic">Refill de jarra.</p>
-                        </div>
-                        <span class="text-xl font-bold text-rose-coyoles ml-4">$25</span>
+            <h3 class="text-3xl font-bold text-rose-coyoles mb-8 flex items-center font-serif">🍰 Postres</h3>
+            <div class="space-y-8">
+                <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
+                    <div class="pr-4">
+                        <h4 class="text-xl font-bold text-stone-800">Pay de Queso</h4>
+                        <p class="text-stone-600 mt-1 italic">Receta casera y deliciosa.</p>
                     </div>
-
-                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
-                        <div>
-                            <h4 class="text-xl font-bold text-stone-800">Espresso</h4>
-                            <p class="text-stone-600 mt-1 italic">Aromático y lleno de sabor.</p>
-                        </div>
-                        <span class="text-xl font-bold text-rose-coyoles ml-4">$35</span>
-                    </div>
-                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
-                        <div>
-                            <h4 class="text-xl font-bold text-stone-800">Ristretto</h4>
-                            <p class="text-stone-600 mt-1 italic">Extracción restringida, sabor intenso, dulce y menos amargo.</p>
-                        </div>
-                        <span class="text-xl font-bold text-rose-coyoles ml-4">$20</span>
-                    </div>
-                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
-                        <div>
-                            <h4 class="text-xl font-bold text-stone-800">Cortado</h4>
-                            <p class="text-stone-600 mt-1 italic">Cremoso, sabroso e intenso.</p>
-                        </div>
-                        <span class="text-xl font-bold text-rose-coyoles ml-4">$25</span>
-                    </div>
-                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
-                        <div>
-                            <h4 class="text-xl font-bold text-stone-800">Latte Machiato</h4>
-                            <p class="text-stone-600 mt-1 italic">Suave, en capas y lácteo.</p>
-                        </div>
-                        <span class="text-xl font-bold text-rose-coyoles ml-4">$35</span>
-                    </div>
-                    <h3 class="text-3xl font-bold text-green-coyoles mb-8 flex items-center font-serif">
-                    <span class="mr-3 text-4xl"></span> Capuchinos
-                </h3>
+                    <span class="text-xl font-bold text-green-coyoles whitespace-nowrap">$10-$20</span>
                 </div>
                 <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
-                        <div>
-                            <h4 class="text-xl font-bold text-stone-800">Italiano 10 Oz</h4>
-                            <p class="text-stone-600 mt-1 italic">.</p>
-                        </div>
-                        <span class="text-xl font-bold text-rose-coyoles ml-4">$38</span>
+                    <div class="pr-4">
+                        <h4 class="text-xl font-bold text-stone-800">Pay Tortuga</h4>
+                        <p class="text-stone-600 mt-1 italic">Chocolate, nueces y dulce de leche.</p>
                     </div>
-                     <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
-                        <div>
-                            <h4 class="text-xl font-bold text-stone-800">Italiano 12 Oz</h4>
-                        </div>
-                        <span class="text-xl font-bold text-rose-coyoles ml-4">$45</span>
+                    <span class="text-xl font-bold text-green-coyoles whitespace-nowrap">$35-$50</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
+                    <div class="pr-4">
+                        <h4 class="text-xl font-bold text-stone-800">Pastel de Zanahoria</h4>
+                        <p class="text-stone-600 mt-1 italic">Suavecito y cremoso.</p>
                     </div>
-                     <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
-                        <div>
-                            <h4 class="text-xl font-bold text-stone-800">Moka 10 Oz</h4>
-                            <p class="text-stone-600 mt-1 italic">Chocolatoso, intenso, calientito y espumoso.</p>
-                        </div>
-                        <span class="text-xl font-bold text-rose-coyoles ml-4">$60</span>
+                    <span class="text-xl font-bold text-green-coyoles whitespace-nowrap">$35</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
+                    <div class="pr-4">
+                        <h4 class="text-xl font-bold text-stone-800">Gorditas de Azúcar</h4>
+                        <p class="text-stone-600 mt-1 italic">Solas o con mermelada.</p>
                     </div>
-                    <h3 class="text-3xl font-bold text-green-coyoles mb-8 flex items-center font-serif">
-                    <span class="mr-3 text-4xl"></span> Moon Milks 10 Oz
-                </h3>
-            </div>
-             <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
-                        <div>
-                            <h4 class="text-xl font-bold text-stone-800">Chai</h4>
-                            <p class="text-stone-600 mt-1 italic">Cremado y un leve sabor a canela.</p>
-                        </div>
-                        <span class="text-xl font-bold text-rose-coyoles ml-4">$48</span>
-                    </div> <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
-                        <div>
-                            <h4 class="text-xl font-bold text-stone-800">Matcha</h4>
-                            <p class="text-stone-600 mt-1 italic">Pastoso, cremoso y relajante.</p>
-                        </div>
-                        <span class="text-xl font-bold text-rose-coyoles ml-4">$40</span>
-                    </div>
-                     <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
-                        <div>
-                            <h4 class="text-xl font-bold text-stone-800">Moka 10 Oz</h4>
-                            <p class="text-stone-600 mt-1 italic">Rico y lácteo.</p>
-                        </div>
-                        <span class="text-xl font-bold text-rose-coyoles ml-4">$30</span>
-                    </div>
-            <div class="bg-white p-8 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-stone-100 relative overflow-hidden">
-                 <div class="absolute -top-10 -right-10 w-32 h-32 bg-rose-coyoles/10 rounded-full blur-2xl"></div>
-
-                <h3 class="text-3xl font-bold text-rose-coyoles mb-8 flex items-center font-serif">
-                    <span class="mr-3 text-4xl"></span> Postres
-                </h3>
-                <div class="space-y-8">
-                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
-                        <div>
-                            <h4 class="text-xl font-bold text-stone-800">Pay de Queso</h4>
-                            <p class="text-stone-600 mt-1 italic">Receta casera y deliciosa, contamos con distintos tamaños.</p>
-                        </div>
-                        <span class="text-xl font-bold text-green-coyoles ml-4">$10-$20</span>
-                    </div>
-
-                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
-                        <div>
-                            <h4 class="text-xl font-bold text-stone-800">Pay Tortuga</h4>
-                            <p class="text-stone-600 mt-1 italic">Delicioso chocolate con nueces y dulce de leche.</p>
-                        </div>
-                        <span class="text-xl font-bold text-green-coyoles ml-4">$35-$50</span>
-                    </div>
-
-                     <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
-                        <div>
-                            <h4 class="text-xl font-bold text-stone-800">Brownie Doble Chocolate</h4>
-                            <p class="text-stone-600 mt-1 italic">Perfecto para los amantes del cacao.</p>
-                        </div>
-                        <span class="text-xl font-bold text-green-coyoles ml-4">$20</span>
-                    </div>
-                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
-                        <div>
-                            <h4 class="text-xl font-bold text-stone-800">Pastel de Zanahoria</h4>
-                            <p class="text-stone-600 mt-1 italic">Suavecito, sabroso y cremoso.</p>
-                        </div>
-                        <span class="text-xl font-bold text-green-coyoles ml-4">$35</span>
-                    </div>
-                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-4 border-dashed">
-                        <div>
-                            <h4 class="text-xl font-bold text-stone-800">Gorditas de Azúcar</h4>
-                            <p class="text-stone-600 mt-1 italic">Solas o acompañadas de rica mermelada.</p>
-                        </div>
-                        <span class="text-xl font-bold text-green-coyoles ml-4">$20-$25</span>
-                    </div>
+                    <span class="text-xl font-bold text-green-coyoles whitespace-nowrap">$20-$25</span>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="ubicacion" class="py-16 bg-green-coyoles/5 border-t border-green-coyoles/20">
-        <div class="max-w-screen-xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-
-            <div>
-                <h2 class="text-4xl font-bold text-stone-800 mb-6 font-serif">Visítanos en San Nicolás</h2>
-                <p class="text-stone-700 text-lg mb-8">
-                    Un rincón tranquilo en la ciudad. Ven a disfrutar de un momento para ti en nuestro local.
-                </p>
-
-                <div class="space-y-6 bg-white p-6 rounded-xl shadow-md border-l-4 border-rose-coyoles">
-                    <div class="flex items-start">
-                        <span class="text-rose-coyoles text-2xl mr-4 mt-1">📍</span>
-                        <div>
-                            <h4 class="font-bold text-stone-800 text-lg">Ubicación</h4>
-                            <p class="text-stone-600">San Nicolás de los Garza, Nuevo León.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <span class="text-rose-coyoles text-2xl mr-4 mt-1">🕒</span>
-                        <div>
-                            <h4 class="font-bold text-stone-800 text-lg">Horario</h4>
-                            <p class="text-stone-600">Lun - Dom: 7:30 AM - 9:00 PM<br></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-10 flex flex-wrap gap-4">
-                    <a href="https://www.instagram.com/coyolesmx/" target="_blank" class="flex items-center gap-2 bg-stone-800 hover:bg-rose-coyoles text-white px-6 py-3 rounded-full transition duration-300 font-bold shadow-md">
-                        <span></span> Instagram
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=61583167036325" target="_blank" class="flex items-center gap-2 bg-[#3b5998] hover:bg-[#2d4373] text-white px-6 py-3 rounded-full transition duration-300 font-bold shadow-md">
-                        <span></span> Facebook
-                    </a>
-                </div>
-            </div>
-
-            <div class="rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(31,122,60,0.2)] border-4 border-white h-[500px] relative transform rotate-1 hover:rotate-0 transition duration-500">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.719878919739!2d-100.28326322399835!3d25.71369711058593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866295007d60d1df%3A0x5d0b38ca068d5498!2sCoyoles%20Cafeter%C3%ADa!5e0!3m2!1ses-419!2smx!4v1769979017442!5m2!1ses-419!2smx"
-                    width="100%"
-                    height="100%"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-stone-800 text-stone-300 py-8 text-center">
-        <p class="font-serif text-xl text-green-coyoles mb-2 font-bold">COYOLES CAFÉ</p>
-        <p class="text-sm">© 2026. Hecho con amor y sabor de hogar.</p>
-    </footer>
-
-</body>
-</html>
+    </div>
+</section>

@@ -198,6 +198,12 @@
 
     <!-- 2. HÉROE PRINCIPAL SPLIT CON IMÁGENES REALES -->
     <section id="inicio" class="relative min-h-[92vh] flex items-center bg-gradient-to-b from-[#f2f2eb] to-[#fafaf5] pt-24 pb-16 px-4 overflow-hidden">
+        <!-- Imagen de fondo del lugar con difuminado y fade -->
+        <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+            <img src="img/lugar.png" alt="Fondo interior Coyoles Café" class="w-full h-full object-cover opacity-[0.14] select-none">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#f2f2eb]/20 via-[#fafaf5]/85 to-[#fafaf5]"></div>
+        </div>
+
         <!-- Decoraciones de fondo con los nuevos colores de marca -->
         <div class="absolute top-1/4 -left-20 w-80 h-80 bg-green-coyoles/5 rounded-full blur-3xl"></div>
         <div class="absolute bottom-10 -right-20 w-96 h-96 bg-rose-coyoles/5 rounded-full blur-3xl"></div>
@@ -234,9 +240,9 @@
                     </div>
                 </div>
 
-                <!-- Marco secundario: Letrero de Fuera -->
-                <div class="absolute right-[5%] bottom-[5%] w-[45%] h-[60%] rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(250,82,43,0.15)] border-4 border-white transform rotate-6 hover:rotate-0 hover:scale-[1.05] transition duration-500 z-30">
-                    <img src="img/letrerofuera.png" alt="Fachada Coyoles Café" class="w-full h-full object-cover">
+                <!-- Marco secundario: Barra de Servicio (Interior) -->
+                <div class="absolute right-[5%] bottom-[5%] w-[45%] h-[60%] rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(49,75,1,0.12)] border-4 border-white transform rotate-6 hover:rotate-0 hover:scale-[1.05] transition duration-500 z-30">
+                    <img src="img/cajac.png" alt="Barra de servicio Coyoles Café" class="w-full h-full object-cover">
                 </div>
 
                 <!-- Marco decorativo: Estante -->
@@ -1050,7 +1056,7 @@
                 <!-- Portrait 5 -->
                 <div class="portrait-card group relative overflow-hidden rounded-2xl shadow-md border-4 border-white hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-72 sm:h-80 md:h-[380px] w-full cursor-pointer" data-portrait-index="4">
                     <div class="absolute inset-0 bg-stone-200">
-                        <img class="img-active absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100 scale-100 group-hover:scale-105" src="img/letrerofuera.png" alt="Momento Coyoles 5">
+                        <img class="img-active absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100 scale-100 group-hover:scale-105" src="img/cocsas.png" alt="Momento Coyoles 5">
                         <img class="img-next absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 scale-100 group-hover:scale-105" src="" alt="Momento Coyoles 5 Next">
                     </div>
                     <div class="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-stone-900/35 to-transparent pt-16 pb-4 px-4 flex flex-col justify-end transition-all duration-500 group-hover:from-stone-900/90">
@@ -1391,7 +1397,7 @@
             "img/IMG_20260321_154816.jpg", "img/IMG_20260321_154851.jpg", "img/IMG_20260326_104212.jpg",
             "img/IMG_20260327_100235.jpg", "img/IMG_20260327_100242.jpg", "img/a2.png", "img/cajac.png",
             "img/capuchin.png", "img/cocona.png", "img/cocsas.png", "img/cuadro.png", "img/e3.png",
-            "img/fotos.png", "img/letrerofuera.png", "img/lugar.png", "img/s.png", "img/stante.png"
+            "img/fotos.png", "img/lugar.png", "img/s.png", "img/stante.png"
         ];
 
         const coyolesCaptions = [
@@ -1403,7 +1409,7 @@
         ];
 
         // Registro de las imágenes activas en los 6 portraits para evitar duplicados en la pantalla
-        let activeImages = ["img/capuchin.png", "img/lugar.png", "img/cajac.png", "img/stante.png", "img/letrerofuera.png", "img/cocona.png"];
+        let activeImages = ["img/capuchin.png", "img/lugar.png", "img/cajac.png", "img/stante.png", "img/cocsas.png", "img/cocona.png"];
 
         function rotatePortrait(cardElement) {
             const index = parseInt(cardElement.getAttribute('data-portrait-index'));
